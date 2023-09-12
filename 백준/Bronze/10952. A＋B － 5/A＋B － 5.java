@@ -1,5 +1,5 @@
 //빠른 버전
-/*
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
@@ -27,10 +27,11 @@ public class Main {
         bw.close();
     }
 }
-*/
+
 
 //느린 버전
 
+/*
 import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
@@ -46,3 +47,5 @@ public class Main{
         stdIn.close();
     }
 }
+
+*/
