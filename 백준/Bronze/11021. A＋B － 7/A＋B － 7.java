@@ -1,3 +1,7 @@
+
+//빠른 버전
+
+
 import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -20,3 +24,21 @@ public class Main {
         bw.close();
     }
 }
+
+
+/*
+// 느린 버전
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        Scanner stdIn = new Scanner(System.in);
+        int t = stdIn.nextInt();
+        for(int i=0;i<t;i++){
+            int a = stdIn.nextInt();
+            int b = stdIn.nextInt();
+            System.out.println("Case #"+(i+1)+": "+ (a+b));
+        }
+        stdIn.close();
+    }
+}
+*/
