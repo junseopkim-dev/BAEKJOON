@@ -13,19 +13,13 @@ public class Main {
 
         st = new StringTokenizer(br.readLine());
         int[] currentnum = new int[6];
-        int[] adjust = new int[6];
+        int[] adjust = {1,1,2,2,2,8};
         for (int i = 0 ; i<6; i++){
             currentnum[i] = Integer.parseInt(st.nextToken());
         }
-        currentnum[0] = 1- currentnum[0];
-        currentnum[1] = 1- currentnum[1];
-        currentnum[2] = 2- currentnum[2];
-        currentnum[3] = 2-currentnum[3];
-        currentnum[4] = 2-currentnum[4];
-        currentnum[5] = 8-currentnum[5];
 
         for(int i = 0; i<6;i++){
-            bw.write(currentnum[i] + " ");
+            bw.write(String.valueOf(adjust[i]-currentnum[i]) + " ");
         }
         bw.flush();
         br.close();
